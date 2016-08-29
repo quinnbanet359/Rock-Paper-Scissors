@@ -1,6 +1,6 @@
 # Homework, Class 2
 To complete this homework:
-- First understand the rules of the game, https://www.youtube.com/watch?v=J_Z1Q-JcEvQ
+- First understand the rules of the game, https://www.youtube.com/watch?v=cSLeBKT7-sM 
 - Fork this repo into your own
 - Clone this repo to your machine
 - Complete each of the TODO's, the rest of the app should work
