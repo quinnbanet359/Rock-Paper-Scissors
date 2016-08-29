@@ -19,17 +19,24 @@ public class GameUtils {
     public static final String TIES = "ties";
 
     public static Integer getComputerChoice(){
-        Integer selectedValue;
-        Random r = new Random(System.currentTimeMillis());
+        /*
+        TODO: Implement a random number generator that returns of of the three games options.
+         */
+        return  R.id.btnRock;
+    }
 
-        selectedValue = r.nextInt(3);//
-        if(selectedValue==0){
-            return R.id.btnRock;
-        }else if (selectedValue==1){
-            return R.id.btnPaper;
-        }else{
-            return R.id.btnScissors;
-        }
+    public static String evaluateWinner(Integer playerSelectedChoice, Integer computerSelectedChoice) {
+        /*
+         TODO: Create an Interface that has a super type method named eval.
+         TODO: Create classes that implement the interface.
+         TODO: Based on playerChoice, create an instance of that object (IE Rock)
+         TODO: Call the eval method on that object passing in the computer's choice.
+         TODO: Implement the logic for each of the game types to determine the winner.
+         */
+
+        //logic goes here
+
+        return GameUtils.BEATS;
     }
 
     public static Integer convertButtonToImage(Integer buttonChoice) {
@@ -40,19 +47,6 @@ public class GameUtils {
         }else{
             return R.drawable.scissors;
         }
-    }
-
-    public static String evaluateWinner(Integer playerSelectedChoice, Integer computerSelectedChoice) {
-        GameType gameType;
-
-        if (playerSelectedChoice==R.id.btnRock){
-            gameType = new Rock();
-        }else if  (playerSelectedChoice==R.id.btnPaper){
-            gameType = new Paper();
-        }else{
-            gameType = new Scissors();
-        }
-        return gameType.eval(computerSelectedChoice);
     }
 
     public static int defineTextColor(String msg) {
