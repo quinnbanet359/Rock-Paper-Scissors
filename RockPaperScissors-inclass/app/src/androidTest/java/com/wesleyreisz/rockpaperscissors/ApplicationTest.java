@@ -3,6 +3,8 @@ package com.wesleyreisz.rockpaperscissors;
 import android.app.Application;
 import android.test.ApplicationTestCase;
 
+import com.wesleyreisz.rockpaperscissors.Game.GameUtils;
+
 import junit.framework.Assert;
 
 /**

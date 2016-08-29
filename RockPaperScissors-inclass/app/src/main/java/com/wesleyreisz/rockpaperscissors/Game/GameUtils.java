@@ -1,14 +1,12 @@
-package com.wesleyreisz.rockpaperscissors;
+package com.wesleyreisz.rockpaperscissors.Game;
 
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 
 import com.wesleyreisz.rockpaperscissors.Game.GameType;
 import com.wesleyreisz.rockpaperscissors.Game.Paper;
 import com.wesleyreisz.rockpaperscissors.Game.Rock;
 import com.wesleyreisz.rockpaperscissors.Game.Scissors;
-
-import java.util.Random;
+import com.wesleyreisz.rockpaperscissors.R;
 
 /**
  * Created by wesleyreisz on 9/13/15.

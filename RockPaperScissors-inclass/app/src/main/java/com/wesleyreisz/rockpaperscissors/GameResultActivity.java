@@ -1,12 +1,8 @@
 package com.wesleyreisz.rockpaperscissors;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.media.Image;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.wesleyreisz.rockpaperscissors.Game.GameUtils;
 
 public class GameResultActivity extends AppCompatActivity {
 
