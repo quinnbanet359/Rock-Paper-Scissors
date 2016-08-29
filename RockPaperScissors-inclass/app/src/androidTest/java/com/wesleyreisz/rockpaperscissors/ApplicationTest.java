@@ -15,6 +15,13 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         super(Application.class);
     }
     /*
+    TODO: Implement test logic to test the random number generator.
+    */
+    public void testRandomResultGenerator(){
+        
+    }
+
+    /*
     TODO: Implement the logic to make this test case pass.
      */
     public void testScissors(){
