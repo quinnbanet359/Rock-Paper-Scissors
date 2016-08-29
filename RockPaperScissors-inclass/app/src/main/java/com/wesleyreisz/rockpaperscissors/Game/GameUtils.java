@@ -1,11 +1,6 @@
 package com.wesleyreisz.rockpaperscissors.Game;
 
 import android.graphics.Color;
-
-import com.wesleyreisz.rockpaperscissors.Game.GameType;
-import com.wesleyreisz.rockpaperscissors.Game.Paper;
-import com.wesleyreisz.rockpaperscissors.Game.Rock;
-import com.wesleyreisz.rockpaperscissors.Game.Scissors;
 import com.wesleyreisz.rockpaperscissors.R;
 
 /**

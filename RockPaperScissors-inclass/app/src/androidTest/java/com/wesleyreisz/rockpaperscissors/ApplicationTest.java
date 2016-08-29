@@ -18,7 +18,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     TODO: Implement test logic to test the random number generator.
     */
     public void testRandomResultGenerator(){
-        
+        Integer computerChoice = GameUtils.getComputerChoice();
+        Assert.assertEquals(Integer.toString(R.id.btnRock), Integer.toString(computerChoice));
     }
 
     /*
