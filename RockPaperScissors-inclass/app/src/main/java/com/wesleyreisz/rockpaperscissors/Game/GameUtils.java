@@ -29,9 +29,20 @@ public class GameUtils {
     }
 
     public static String evaluateWinner(Integer playerSelectedChoice, Integer computerSelectedChoice) {
+        /*
+        R.id.btnRock;
+        R.id.btnScissors;
+        R.id.btnPaper;
+        */
+
+
+
         //TODO: Create some logic to evaluate winner.
+        
+
 
         /*
+        These are the constants that should be returned
         GameUtils.BEATS;
         GameUtils.TIES;
         GameUtils.LOSES_TO;
