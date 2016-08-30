@@ -3,6 +3,8 @@ package com.wesleyreisz.rockpaperscissors.Game;
 import android.graphics.Color;
 import com.wesleyreisz.rockpaperscissors.R;
 
+import java.util.Random;
+
 /**
  * Created by wesleyreisz on 9/13/15.
  */
@@ -15,7 +17,17 @@ public class GameUtils {
         /*
         TODO: Implement a random number generator that returns of of the three games options.
          */
-        return  R.id.btnRock;
+        Random rand = new Random();
+
+        int n = rand.nextInt(3) + 1;
+        if(n==1){
+            return R.id.btnPaper;
+        }else if(n==2){
+            return R.id.btnRock;
+        }else{
+            return R.id.btnScissors;
+        }
+
     }
 
     public static String evaluateWinner(Integer playerSelectedChoice, Integer computerSelectedChoice) {

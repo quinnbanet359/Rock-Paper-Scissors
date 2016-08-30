@@ -2,6 +2,7 @@ package com.wesleyreisz.rockpaperscissors;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
+import android.util.Log;
 
 import com.wesleyreisz.rockpaperscissors.Game.GameUtils;
 
@@ -18,8 +19,31 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     TODO: Implement test logic to test the random number generator.
     */
     public void testRandomResultGenerator(){
-        Integer computerChoice = GameUtils.getComputerChoice();
-        Assert.assertEquals(Integer.toString(R.id.btnRock), Integer.toString(computerChoice));
+        int rockCount = 0;
+        int paperCount = 0;
+        int scissorsCount = 0;
+
+        for (int i = 0; i < 100; i++) {
+            Integer choice = GameUtils.getComputerChoice();
+            if (choice == R.id.btnRock) {
+                rockCount++;
+            } else if (choice == R.id.btnPaper) {
+                paperCount++;
+            } else if (choice == R.id.btnScissors) {
+                scissorsCount++;
+            } else {
+                Log.d("Test", "Wes You could do better!");
+            }
+        }
+
+        Assert.assertTrue(rockCount > 0);
+        Assert.assertTrue(paperCount > 0);
+        Assert.assertTrue(scissorsCount > 0);
+
+        String value = String.format("Rockcount: %d, Papercount: %d, scissorsCount: %d",
+                rockCount, paperCount, scissorsCount);
+
+        Log.d("UNIT_TEST", value);
     }
 
     /*

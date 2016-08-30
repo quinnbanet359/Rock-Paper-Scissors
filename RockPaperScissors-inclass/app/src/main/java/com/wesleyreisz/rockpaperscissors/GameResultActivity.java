@@ -35,10 +35,13 @@ public class GameResultActivity extends AppCompatActivity {
 
         Integer playerSelectedChoice = (Integer)intent.getIntExtra(MainActivity.PLAYER_CHOICE,1);
         ImageView player = (ImageView) findViewById(R.id.btnPlayer);
-        player.setImageResource(GameUtils.convertButtonToImage(playerSelectedChoice));
+        player.setImageResource(
+                GameUtils.convertButtonToImage(playerSelectedChoice)
+        );
 
         //get the a random computer choice
         Integer computerSelectedChoice = GameUtils.getComputerChoice();
+
         ImageView computer = (ImageView) findViewById(R.id.btnComputer);
         computer.setImageResource(GameUtils.convertButtonToImage(computerSelectedChoice));
 
