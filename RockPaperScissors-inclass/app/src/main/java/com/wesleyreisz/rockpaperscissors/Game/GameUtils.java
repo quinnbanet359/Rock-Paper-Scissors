@@ -14,9 +14,7 @@ public class GameUtils {
     public static final String TIES = "ties";
 
     public static Integer getComputerChoice(){
-        /*
-        TODO: Implement a random number generator that returns of of the three games options.
-         */
+
         Random rand = new Random();
 
         int n = rand.nextInt(3) + 1;
@@ -32,15 +30,23 @@ public class GameUtils {
 
     public static String evaluateWinner(Integer playerSelectedChoice, Integer computerSelectedChoice) {
         /*
-         TODO: Create an Interface that has a super type method named eval.
-         TODO: Create classes that implement the interface.
-         TODO: Based on playerChoice, create an instance of that object (IE Rock)
-         TODO: Call the eval method on that object passing in the computer's choice.
-         TODO: Implement the logic for each of the game types to determine the winner.
-         */
+        R.id.btnRock;
+        R.id.btnScissors;
+        R.id.btnPaper;
+        */
 
-        //logic goes here
 
+
+        //TODO: Create some logic to evaluate winner.
+        
+
+
+        /*
+        These are the constants that should be returned
+        GameUtils.BEATS;
+        GameUtils.TIES;
+        GameUtils.LOSES_TO;
+        */
         return GameUtils.BEATS;
     }
 
